@@ -18,7 +18,7 @@ var settings = {
     js: "js",
     scripts: "scripts",
     lang: "lang",
-    langDomain: 'tusken',
+    langDomain: 'wp_theme',
     langFiles: ['./*.php', './includes/*.php', './parts/**/**/*.php'],
     jsFiles: './assets/scripts/src/app.js'
 };
@@ -50,7 +50,7 @@ gulp.task('translate', function () { // Generate translation file
         .pipe(wpPot( {
             domain: settings.langDomain,
             destFile: paths.lang,
-            package: 'tuskendemarren_wordpress_theme',
+            package: 'wordpress_theme',
         } ))
         .pipe(gulp.dest('./'))
         .pipe(notice({ message: 'Translations generated'}));
