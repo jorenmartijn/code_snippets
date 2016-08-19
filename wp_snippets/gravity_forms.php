@@ -36,6 +36,7 @@ function populate_post_types( $form ) {
     			continue; // no need to continue with the loop.
     		}
     	}
+
         // you can add additional parameters here to alter the posts that are retrieved
         // more info: http://codex.wordpress.org/Template_Tags/get_posts
         // generalised the below code by making $post_type dynamic
