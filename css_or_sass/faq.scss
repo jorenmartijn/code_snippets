@@ -1,0 +1,39 @@
+.faqs{
+	.category{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.topic{
+		display: block;
+		background-color: $col-grey;
+		.question{
+			display: block;
+			cursor: pointer; cursor: hand;
+			padding: 5px;
+
+			&::before{
+				font-family: 'FontAwesome';
+				content: '\f105';
+				transition: transform .5s ease;
+				display: inline-block;
+				margin-right: 5px;
+				margin-left: 5px;
+			}
+			&.active::before{
+				transform: rotate(90deg);
+			}
+		}
+		.answer{
+			display:none;
+			max-height: 0px;
+			margin-bottom: 5px;
+			p{
+				padding: 5px;
+			}
+			&.active{
+				max-height: 100%;
+				display: block;
+			}
+		}
+	}
+}
