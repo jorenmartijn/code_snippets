@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive image map prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="row-full row" style="border: 1px solid red;">
+  <div class="large-4 medium-6 small-12 columns info">
+    <h3>Click on a dot for more info &gt;</h3>
+    <div class="row ">
+      <div class="large-12 columns ">
+        <div id="content-1" class="info-card card">
+          <header>
+            <img src="http://i66.tinypic.com/2rmbbeg.jpg" />
+          </header>
+          <div class="card-section">
+            1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, architecto eos. Esse dolores culpa ipsam voluptatum dolorum iusto recusandae velit natus, debitis commodi. Aliquid vel asperiores ex suscipit, magni? Nostrum.</div>
+        </div>
+        <div id="content-2" class="info-card card">
+          <header>
+            <img src="http://i66.tinypic.com/2rmbbeg.jpg" />
+          </header>
+          <div class="card-section">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, architecto eos. Esse dolores culpa ipsam voluptatum dolorum iusto recusandae velit natus, debitis commodi. Aliquid vel asperiores ex suscipit, magni? Nostrum.</div>
+        </div>
+        <div id="content-3" class="info-card card">
+          <header>
+            <img src="http://i66.tinypic.com/2rmbbeg.jpg" />
+          </header>
+          <div class="card-section">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, architecto eos. Esse dolores culpa ipsam voluptatum dolorum iusto recusandae velit natus, debitis commodi. Aliquid vel asperiores ex suscipit, magni? Nostrum.</div>
+        </div>
+        <div id="content-4" class="info-card card">
+          <header>
+            <img src="http://i66.tinypic.com/2rmbbeg.jpg" data-pin-nopin="true" />
+          </header>
+          <div class="card-section">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, architecto eos. Esse dolores culpa ipsam voluptatum dolorum iusto recusandae velit natus, debitis commodi. Aliquid vel asperiores ex suscipit, magni? Nostrum.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="large-8 medium-6 small-12 columns">
+    <div id="map">
+      <img src="http://i66.tinypic.com/2rmbbeg.jpg" />
+    </div>
+    <div id="coords" style="display:none;">
+      <div data-x="30%" data-y="30%" data-target="#content-1" class="dot"></div>
+      <div data-x="18%" data-y="28%" data-target="#content-2" class="dot"></div>
+      <div data-x="60%" data-y="50%" data-target="#content-3" class="dot"></div>
+      <div data-x="40%" data-y="60%" data-target="#content-4" class="dot"></div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

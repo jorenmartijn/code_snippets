@@ -1,0 +1,53 @@
+#map {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.info {
+   position: relative;
+  .info-card {
+    position: absolute;
+    top:0;
+    visibility: hidden;
+    opactiy: 0;
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+
+.row-full { max-width: 100%!important; }
+.row-large { max-width: 1550px!important; }
+.row-small { max-width: 975px!important; }
+
+@media print, screen and (min-width: 75em) {
+	.xlarge-1  { width: 8.33333%!important; }
+	.xlarge-2  { width: 16.66667%!important; }
+	.xlarge-3  { width: 25%!important; }
+	.xlarge-4  { width: 33.33333%!important; }
+	.xlarge-5  { width: 41.66667%!important; }
+	.xlarge-6  { width: 50%!important; }
+	.xlarge-7  { width: 58.33333%!important; }
+	.xlarge-8  { width: 66.66667%!important; }
+	.xlarge-9  { width: 75%!important; }
+	.xlarge-10 { width: 83.33333%!important; }
+	.xlarge-11 { width: 91.66667%!important; }
+	.xlarge-12 { width: 100%!important; }
+}
+
+@media print, screen and (min-width: 100.000em) {
+	.xxlarge-1  { width: 8.33333%!important; }
+	.xxlarge-2  { width: 16.66667%!important; }
+	.xxlarge-3  { width: 25%!important; }
+	.xxlarge-4  { width: 33.33333%!important; }
+	.xxlarge-5  { width: 41.66667%!important; }
+	.xxlarge-6  { width: 50%!important; }
+	.xxlarge-7  { width: 58.33333%!important; }
+	.xxlarge-8  { width: 66.66667%!important; }
+	.xxlarge-9  { width: 75%!important; }
+	.xxlarge-10 { width: 83.33333%!important; }
+	.xxlarge-11 { width: 91.66667%!important; }
+	.xxlarge-12 { width: 100%!important; }
+}
