@@ -55,7 +55,7 @@ class Calendar {
 			'days_in_month' => $days_in_month,
 			'next' => $this->nextMonth($month, $year),
 			'prev' => $this->prevMonth($month, $year),
-			'output' => $this->calculateDays($this->days[$first_day]['number'], $days_in_month, $month, $year)
+			'output' => $this->generateGrid($this->days[$first_day]['number'], $days_in_month, $month, $year)
 		];
 		// Return out calendar structure
 		return $calendar;
@@ -122,7 +122,7 @@ class Calendar {
 	 * @param $year (int) the current year
 	 * @return (array) a multi-dimensional array representing the calendar structure
 	 */
-	private function calculateDays( $start_at, $days_in_month, $month, $year )  {
+	private function generateGrid( $start_at, $days_in_month, $month, $year )  {
 		// Previous and next month
 		$previous  = $this->prevMonth($month, $year);
 		$next = $this->nextMonth($month, $year);
